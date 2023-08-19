@@ -11,6 +11,7 @@ from transformers import AutoTokenizer, MarianMTModel
 
 
 tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
+
 model = TFAutoModelForSeq2SeqLM.from_pretrained("Langauge_Model_Tamil/ta_En_translation_tf_model")
 
 sample_text = "உங்கள் பெயர் என்ன"
