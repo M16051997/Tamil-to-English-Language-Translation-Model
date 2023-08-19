@@ -18,7 +18,9 @@ sample_text = "உங்கள் பெயர் என்ன"
 inputs = tokenizer(sample_text, return_tensors="pt")
 
 generated_ids = model.generate(**inputs)
+
 translated_text = tokenizer.decode(generated_ids[0], skip_special_tokens=True)
+
 print("Translated Text:", translated_text)
 
 
